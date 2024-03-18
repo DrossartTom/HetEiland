@@ -1,0 +1,311 @@
+/* Algemeen + mobile first */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --header-color: rgb(255, 255, 255);
+    --header-backgroundcolor: rgb(27, 99, 110);
+    --article-color: rgb(201, 179, 211);
+    --background-color: rgba(211, 201, 201, 0.295);
+    --afronding: 5px;
+}
+
+/* ---------------
+header 
+nav logo
+figure
+footer
+-------------- */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.4;
+    background-color: rgb(217, 193, 193);
+}
+
+header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.headerlogo img {
+    max-width: 150px;
+}
+
+h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: var(--afronding);
+    background-color: var(--header-backgroundcolor);
+    color: var(--header-color);
+    padding: 1ch;
+}
+
+h3 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    grid-column: 1/-1;
+}
+
+nav {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+}
+
+div.headerlogo {
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 100%;
+    margin-right: 1em;
+}
+
+ul {
+    display: flex;
+    gap: 1em;
+    padding: 1em;
+    flex-wrap: wrap;
+    font-size: 100%;
+    justify-content: start;
+    background-color: var(--header-backgroundcolor);
+}
+
+li {
+    list-style: none;
+}
+
+li>a {
+    color: white;
+    padding: 5px 1em;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+li>a:hover {
+    color: black;
+    background-color: var(--background-color);
+    border-radius: 5px;
+}
+
+li.hier>a {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+img {
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+footer {
+
+    padding: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: var(--header-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    background-color: var(--header-backgroundcolor);
+}
+
+p>a {
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+p>a:hover {
+    color: black;
+    background-color: var(--background-color);
+    border-radius: 5px;
+}
+
+/* ---------------
+Speciallekes
+-------------- */
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.socials>figure {
+    transition: background-color 0.5s;
+}
+
+.socials>figure:hover {
+    color: black;
+    background-color: var(--background-color);
+    border-radius: 5px;
+
+}
+
+article>div {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footersection {
+    gap: 1em;
+    margin-bottom: 1em;
+    max-width: 120ch;
+}
+
+.footersection>p {
+    padding-top: 1em;
+}
+
+table {
+    max-width: 100%;
+    border-collapse: collapse;
+    border-spacing: 5px;
+}
+
+th,
+td {
+    padding-right: 2ch;
+    text-align: left;
+
+
+}
+
+th,
+td>a {
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+td>a:hover {
+    color: black;
+    background-color: var(--background-color);
+    border-radius: 5px;
+}
+
+/* ---------------
+Formulier
+-------------- */
+form {
+    max-width: 400px;
+    margin-top: 2em;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    resize: none;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* --------------------
+main section article
+-------------------- */
+main {
+    padding: 1em;
+    max-width: 120ch;
+    margin: 0 auto;
+    background-color: white;
+}
+
+section {
+    margin-top: 1em;
+}
+
+article {
+    margin-bottom: 1em;
+}
+
+article>p>a {
+    color: black;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+/* --------------------
+media queries
+-------------------- */
+/* Navigatie elementen zitten in een grid tot en met 440px breed */
+@media (max-width: 440px) {
+    ul {
+        display: grid;
+        gap: 1em;
+        grid-template-columns: 1fr 1fr;
+        padding: 5px 2em;
+    }
+}
+
+/* Afstanden corrigeren vanaf 680px */
+@media (min-width: 680px) {
+
+    main,
+    ul,
+    footer {
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+
+    .headerlogo img {
+        max-width: 100%;
+    }
+
+    section {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    article:first-child {
+        grid-column: 1/-1;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Afstanden correctie vanaf 750px */
+    @media (min-width: 750px) {
+        footer {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    /* Afstanden correctie vanaf 1000px */
+    @media (min-width: 1000px) {
+
+        main,
+        ul,
+        footer {
+            padding-left: 10em;
+            padding-right: 10em;
+        }
+
+        footer {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
