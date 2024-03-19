@@ -1,0 +1,17 @@
+- wie zijn wij
+
+	Level 28 (zie https://level27.be/nl)
+	software/webdesign
+	PaaS hosting (Platform as a Service) 
+	+-20 werknemers
+
+- onze klanten
+	vooral overheden, gemeentebesturen
+	gebruikers hebben weinig IT kennis
+
+- benodigdheden voor de site
+
+	AI geschiedenis
+	lijst van verschillende AI's, met info over hoe te gebruiken, mogelijkheden, voor en nadelen  + demo
+		vooral gebruikt voor  mails, office, database, financieel
+	links naar socials
