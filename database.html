@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactgegevens</title>
+    <script src="database.js" defer></script> <!-- Importeer het JavaScript-bestand -->
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Contactgegevens</h2>
+    <a href="courses.html">Tijdelijke link naar courses</a>
+    <table>
+        <thead>
+            <tr>
+                <th>Voornaam</th>
+                <th>Naam</th>
+                <th>Adres</th>
+                <th>E-mailadres</th>
+                <th>Cursus</th>
+                <th>Commentaar</th>
+                <th>Actie</th> <!-- Nieuwe kolom voor de actieknop -->
+            </tr>
+        </thead>
+        <tbody id="contactDataBody">
+        </tbody>
+    </table>
+
+    <!-- Knop om alle gegevens uit de tabel te verwijderen -->
+    <button id="clearButton">Alle gegevens verwijderen</button>
+
+</body>
+
+</html>

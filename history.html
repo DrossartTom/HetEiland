@@ -9,17 +9,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,100;1,500&display=swap"
         rel="stylesheet">
-    <title>contact</title>
+    <script src="script.js"></script>
+    <title>History</title>
 </head>
 
 <body>
     <nav>
-        <ul>
+        <!-- Hamburger menu toggle button -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <!-- Navigatiemenu-items -->
+        <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">Wat is AI?</a></li>
             <li class="hier"><a href="history.html">Geschiedenis</a></li>
             <li><a href="verschillendeAIs.html">Verschillende AI's</a></li>
+            <li><a href="courses.html">Inschrijvingen</a></li>
         </ul>
+        <div class="logo-container">
+            <img src="img/history.png" alt="Logo">
+        </div>
     </nav>
     <main>
         <h2>De geschiedenis van AI</h2>
@@ -75,9 +88,6 @@
             </article>
         </section>
     </main>
-
-    </main>
-
     <footer>
         <div class="footersection">
             <h3>Het Eiland</h3>

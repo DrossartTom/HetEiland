@@ -9,18 +9,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,100;1,500&display=swap"
         rel="stylesheet">
-    <title>Samenwerken met AI</title>
+    <script src="script.js"></script>
+    <title>Home</title>
 </head>
 
 <body>
     <nav>
-        <ul>
+        <!-- Hamburger menu toggle button -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <!-- Navigatiemenu-items -->
+        <ul class="menu">
             <li class="hier"><a href="index.html">Home</a></li>
             <li><a href="about.html">Wat is AI?</a></li>
             <li><a href="history.html">Geschiedenis</a></li>
             <li><a href="verschillendeAIs.html">Verschillende AI's</a></li>
+            <li><a href="courses.html">Inschrijvingen</a></li>
         </ul>
+        <div class="logo-container">
+            <img src="img/history.png" alt="Logo">
+        </div>
+
+
     </nav>
+
     <main>
         <h2>Home</h2>
         <article>
@@ -35,7 +51,7 @@
                 Of je nu een nieuwkomer bent of een doorgewinterde expert, hier vind je alles
                 wat je moet weten over AI.
             </p>
-            </p>
+
         </article>
         <div class="gallery">
             <div class="container">
@@ -126,13 +142,14 @@
                     <a href="https://www.linkedin.com/"><img src="img/linkedin.png" alt="linkedin"></a>
                 </figure>
             </div>
-            </a>
+
         </div>
 
         <div class="footersection">
             <p>&copy;Het Eiland, 2023-2024 UCLL</p>
         </div>
     </footer>
+
 </body>
 
 </html>
