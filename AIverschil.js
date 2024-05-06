@@ -10,6 +10,7 @@ const chatgptbutton = document.querySelector("#chatgpt")
 
 chatgptbutton.addEventListener('click', () => {
     console.log("clicked")
-    titel.innerHTML = "<p>chatgpt</p>"
-    window.location.href = 'http://127.0.0.1:5500/verschillendeAITemplate/indexAI.html';
+    
+    window.location.href = 'http://127.0.0.1:5500/HetEiland/indexAI.html';
+    titel.innerText = "chatgpt";
 })
