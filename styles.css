@@ -299,11 +299,8 @@ textarea {
 
 .ai-button img {
     max-width: 250px;
-    /* Maximum width */
     height: auto;
-    /* Let height adjust automatically */
     max-height: 300px;
-    /* Maximum height */
     vertical-align: middle;
 }
 
