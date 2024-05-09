@@ -282,6 +282,31 @@ textarea {
     resize: none;
 }
 
+/* verschillendeAIs style */
+.ai-info {
+    display: none;
+}
+
+.ai-info.active {
+    display: block;
+}
+
+.ai-button {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.ai-button img {
+    max-width: 250px;
+    /* Maximum width */
+    height: auto;
+    /* Let height adjust automatically */
+    max-height: 300px;
+    /* Maximum height */
+    vertical-align: middle;
+}
+
 input[type="submit"] {
     background-color: #4caf50;
     color: white;
