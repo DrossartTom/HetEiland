@@ -9,20 +9,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,100;1,500&display=swap"
         rel="stylesheet">
-    <title>about</title>
+    <script src="script.js"></script>
+    <title>About</title>
 </head>
 
 <body>
-
     <nav>
-        <ul>
+        <!-- Hamburger menu toggle button -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <!-- Navigatiemenu-items -->
+        <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li class="hier"><a href="about.html">Wat is AI?</a></li>
             <li><a href="history.html">Geschiedenis</a></li>
             <li><a href="verschillendeAIs.html">Verschillende AI's</a></li>
+            <li><a href="courses.html">Inschrijvingen</a></li>
         </ul>
+        <div class="logo-container">
+            <img src="img/lvl28Logo.png" alt="Logo">
+        </div>
     </nav>
-
     <main>
         <h2>Wat is AI?</h2>
         <section>
@@ -47,8 +58,6 @@
             </article>
 
             <img src="img/voorbeeldfoto.jpeg" alt="AI">
-
-
         </section>
         <section>
             <h3>Waarom is AI belangrijk?</h3>
@@ -75,62 +84,62 @@
             <article>
                 De vooruitzichten van AI zijn buitengewoon veelbelovend en omvatten een breed scala aan toepassingen
                 en impact op verschillende gebieden van het menselijk leven. Enkele belangrijke vooruitzichten zijn:
+            </article>
 
+            <ol>
+                <li>
+                    Verbeterde efficiëntie en automatisering: AI-systemen kunnen repetitieve taken automatiseren
+                    en
+                    processen stroomlijnen, wat leidt tot verbeterde efficiëntie in verschillende sectoren,
+                    zoals
+                    productie, logistiek, gezondheidszorg en financiën.
+                </li>
+                <li>
+                    Betere besluitvorming: AI-systemen kunnen grote hoeveelheden gegevens analyseren en patronen
+                    herkennen die menselijke waarneming te boven gaan. Dit kan leiden tot betere besluitvorming
+                    in
+                    gebieden zoals medische diagnoses, financiële prognoses, risicobeheer en
+                    klimaatvoorspellingen.
+                </li>
+                <li>
+                    Personalisatie van diensten: AI kan worden gebruikt om gepersonaliseerde ervaringen te
+                    bieden in
+                    verschillende domeinen, zoals e-commerce, media, onderwijs en gezondheidszorg, waardoor
+                    producten en
+                    diensten beter kunnen worden afgestemd op individuele behoeften en voorkeuren.
+                </li>
+                <li>
+                    Innovatie en nieuwe mogelijkheden: AI stimuleert innovatie door het mogelijk te maken nieuwe
+                    technologieën en toepassingen te ontwikkelen, zoals autonome voertuigen, geavanceerde
+                    robotica,
+                    natuurlijke taalverwerking, augmented reality en meer.
+                </li>
+                <li>
+                    Economische groei: De groei van de AI-sector heeft het potentieel om nieuwe banen te creëren
+                    en
+                    bestaande industrieën te transformeren, wat kan bijdragen aan economische groei en
+                    ontwikkeling.
+                </li>
+                <li>
+                    Maatschappelijke uitdagingen aanpakken: AI kan worden ingezet om maatschappelijke
+                    uitdagingen
+                    aan te
+                    pakken, zoals het verbeteren van de gezondheidszorg, het verminderen van ongelijkheid, het
+                    bevorderen van duurzaamheid en het versterken van de cybersecurity.
+                </li>
 
-                <ol>
-                    <li>
-                        Verbeterde efficiëntie en automatisering: AI-systemen kunnen repetitieve taken automatiseren
-                        en
-                        processen stroomlijnen, wat leidt tot verbeterde efficiëntie in verschillende sectoren,
-                        zoals
-                        productie, logistiek, gezondheidszorg en financiën.
-                    </li>
-                    <li>
-                        Betere besluitvorming: AI-systemen kunnen grote hoeveelheden gegevens analyseren en patronen
-                        herkennen die menselijke waarneming te boven gaan. Dit kan leiden tot betere besluitvorming
-                        in
-                        gebieden zoals medische diagnoses, financiële prognoses, risicobeheer en
-                        klimaatvoorspellingen.
-                    </li>
-                    <li>
-                        Personalisatie van diensten: AI kan worden gebruikt om gepersonaliseerde ervaringen te
-                        bieden in
-                        verschillende domeinen, zoals e-commerce, media, onderwijs en gezondheidszorg, waardoor
-                        producten en
-                        diensten beter kunnen worden afgestemd op individuele behoeften en voorkeuren.
-                    </li>
-                    <li>
-                        Innovatie en nieuwe mogelijkheden: AI stimuleert innovatie door het mogelijk te maken nieuwe
-                        technologieën en toepassingen te ontwikkelen, zoals autonome voertuigen, geavanceerde
-                        robotica,
-                        natuurlijke taalverwerking, augmented reality en meer.
-                    </li>
-                    <li>
-                        Economische groei: De groei van de AI-sector heeft het potentieel om nieuwe banen te creëren
-                        en
-                        bestaande industrieën te transformeren, wat kan bijdragen aan economische groei en
-                        ontwikkeling.
-                    </li>
-                    <li>
-                        Maatschappelijke uitdagingen aanpakken: AI kan worden ingezet om maatschappelijke
-                        uitdagingen
-                        aan te
-                        pakken, zoals het verbeteren van de gezondheidszorg, het verminderen van ongelijkheid, het
-                        bevorderen van duurzaamheid en het versterken van de cybersecurity.
-                    </li>
+            </ol>
 
-                </ol>
-
-                <article>
-                    Het is echter belangrijk om de uitdagingen en risico's die gepaard gaan met de groei van AI niet
-                    over het hoofd te zien, zoals privacykwesties, potentieel voor bias en discriminatie,
-                    werkloosheid
-                    door automatisering en de ethische implicaties van AI-gebruik. Het is cruciaal dat de
-                    ontwikkeling
-                    en inzet van AI worden begeleid door zorgvuldig beleid en ethische richtlijnen om ervoor te
-                    zorgen
-                    dat de voordelen worden gemaximaliseerd en de nadelen worden geminimaliseerd.
-                </article>
+            <article>
+                Het is echter belangrijk om de uitdagingen en risico's die gepaard gaan met de groei van AI niet
+                over het hoofd te zien, zoals privacykwesties, potentieel voor bias en discriminatie,
+                werkloosheid
+                door automatisering en de ethische implicaties van AI-gebruik. Het is cruciaal dat de
+                ontwikkeling
+                en inzet van AI worden begeleid door zorgvuldig beleid en ethische richtlijnen om ervoor te
+                zorgen
+                dat de voordelen worden gemaximaliseerd en de nadelen worden geminimaliseerd.
+            </article>
 
         </section>
 
@@ -138,7 +147,7 @@
 
     <footer>
         <div class="footersection">
-            <h3>Het Eiland</h3>
+            <h3>lvl28</h3>
             <table>
                 <tr>
                     <td>
@@ -153,7 +162,7 @@
                         Mail:
                     </td>
                     <td>
-                        <a href="mailto:info@heteiland.be">info@hetEiland.be</a>
+                        <a href="mailto:info@lvl28.be">info@lvl28.be</a>
                     </td>
                 <tr>
                     <td>
@@ -168,7 +177,7 @@
 
         <div class="footersection">
             <h3>Over ons</h3>
-            <p>Het eiland is een team van gespecialiseerden individuen. Samen afgestudeerd in het graduaat programmeren
+            <p>lvl28 is een team van gespecialiseerden individuen. Samen afgestudeerd in het graduaat programmeren
                 te UCLL in leuven en hebben u een boodschap te melden: Together to the top!</p>
 
         </div>
@@ -193,7 +202,7 @@
         </div>
 
         <div class="footersection">
-            <p>&copy;Het Eiland, 2023-2024 UCLL</p>
+            <p>&copy;lvl28, 2023-2024 UCLL</p>
         </div>
     </footer>
 </body>
