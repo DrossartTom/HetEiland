@@ -298,11 +298,13 @@ textarea {
 }
 
 .ai-button img {
-    max-width: 250px;
-    height: auto;
-    max-height: 300px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
     vertical-align: middle;
 }
+
+
 
 input[type="submit"] {
     background-color: #4caf50;
