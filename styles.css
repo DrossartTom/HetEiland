@@ -81,6 +81,18 @@ ol {
     flex-wrap: wrap;
 }
 
+.highlighted {
+    font-weight: bold;
+    color: blue;
+
+}
+
+li>b:hover {
+    cursor: pointer;
+}
+
+
+
 
 li {
     list-style: none;
