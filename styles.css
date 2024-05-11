@@ -283,6 +283,7 @@ textarea {
 }
 
 /* verschillendeAIs style */
+
 .ai-info {
     display: none;
 }
@@ -298,11 +299,27 @@ textarea {
 }
 
 .ai-button img {
-    max-width: 250px;
-    height: auto;
-    max-height: 300px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
     vertical-align: middle;
 }
+
+.ai-info-content {
+    display: flex;
+}
+
+.ai-info-content .column {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.ai-info-content .column p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* end of AI verschillende */
 
 input[type="submit"] {
     background-color: #4caf50;

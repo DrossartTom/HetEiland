@@ -11,42 +11,72 @@
         rel="stylesheet">
     <title>diensten</title>
     <script src="indexAI.js" type="module" defer></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
     <nav>
-        <ul>
+        <!-- Hamburger menu toggle button -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    
+        <!-- Navigatiemenu-items -->
+        <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">Wat is AI?</a></li>
             <li><a href="history.html">Geschiedenis</a></li>
             <li class="hier"><a href="verschillendeAIs.html">Verschillende AI's</a></li>
+            <li><a href="courses.html">Inschrijvingen</a></li>
         </ul>
+        <div class="logo-container">
+            <img src="img/lvl28Logo.png" alt="Logo">
+        </div>
     </nav>
     <main>
         <h2>Welke AI's zijn er allemaal?</h2>
         <button class="ai-button" data-target="chatgpt"><img src="img/chatgpt.png" alt="ChatGPT"></button>
         <button class="ai-button" data-target="blackbox"><img src="img/blackbox.png" alt="blackbox"></button>
-        <!-- Add more buttons for other AIs -->
         
         <div id="chatgpt-info" class="ai-info">
             <h3>ChatGPT</h3>
-            <!-- Add ChatGPT info here -->
-            <p>This is the information about ChatGPT</p>
+            <div class="ai-info-content">
+                <div class="column">
+                    <p>ChatGPT is een slim computerprogramma gemaakt door een bedrijf genaamd OpenAI. Het is erg goed in
+                        het begrijpen en
+                        praten zoals mensen dat doen. Je kunt het vragen stellen, ermee chatten, of zelfs hulp krijgen bij
+                        het schrijven van
+                        artikels of andere zaken.</p>
+                    <p>Met zijn brede kennis en begrip van natuurlijke taal kan ChatGPT helpen bij het oplossen van problemen,
+                        het verstrekken van informatie en het ondersteunen van creatieve processen.</p>
+                </div>
+                <div class="column">
+                    <p>Of het nu gaat om het delen van kennis, het verkennen van ideeën of gewoon een informeel gesprek,
+                        ChatGPT staat klaar om te interacteren en te assisteren op een breed scala aan onderwerpen, altijd
+                        beschikbaar en toegankelijk.</p>
+                </div>
+            </div>
             <button class="close-button">Close</button>
         </div>
+
         
         <div id="blackbox-info" class="ai-info">
             <h3>Blackbox</h3>
-            <!-- Add blackbox info here -->
-            <p>This is the information about blackbox</p>
+            <div class="ai-info-content">
+                <div class="column">
+                    <p></p>
+                </div>
+            </div>
             <button class="close-button">Close</button>
         </div>
-        <!-- Add more divs for other AIs -->
+
     </main>
 
     <footer>
         <div class="footersection">
-            <h3>Het Eiland</h3>
+            <h3>lvl28</h3>
             <table>
                 <tr>
                     <td>
@@ -61,7 +91,7 @@
                         Mail:
                     </td>
                     <td>
-                        <a href="mailto:info@heteiland.be">info@hetEiland.be</a>
+                        <a href="mailto:info@lvl28.be">info@lvl28.be</a>
                     </td>
                 <tr>
                     <td>
@@ -73,17 +103,17 @@
                 </tr>
             </table>
         </div>
-
+    
         <div class="footersection">
             <h3>Over ons</h3>
-            <p>Het eiland is een team van gespecialiseerden individuen. Samen afgestudeerd in het graduaat programmeren
+            <p>lvl28 is een team van gespecialiseerden individuen. Samen afgestudeerd in het graduaat programmeren
                 te UCLL in leuven en hebben u een boodschap te melden: Together to the top!</p>
-
+    
         </div>
         <div class="footersection">
-
+    
             <h3>Volg ons</h3>
-
+    
             <div class="socials">
                 <figure>
                     <a href="https://www.facebook.com/"><img src="img/facebook.png" alt="Facebook"></a>
@@ -99,9 +129,9 @@
                 </figure>
             </div>
         </div>
-
+    
         <div class="footersection">
-            <p>&copy;Het Eiland, 2023-2024 UCLL</p>
+            <p>&copy;lvl28, 2023-2024 UCLL</p>
         </div>
     </footer>
 </body>
