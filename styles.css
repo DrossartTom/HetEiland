@@ -377,6 +377,16 @@ article>p>a {
     transition: background-color 0.5s;
 }
 
+/* Stijlen voor specifieke afbeeldingen in artikels */
+.article-image {
+    max-width: 350px;
+    /* Pas de maximale breedte van de afbeelding aan naar wens */
+    width: 100%;
+    /* Zorg ervoor dat de afbeelding responsief blijft */
+    height: auto;
+    /* Behoud de aspectverhouding van de afbeelding */
+}
+
 /* --------------------
 media queries
 -------------------- */
