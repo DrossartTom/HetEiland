@@ -10,7 +10,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,100;1,500&display=swap"
         rel="stylesheet">
     <script src="script.js"></script>
-    <script src="history.js" defer></script>
+    <script>
+        function myFunction(id) {
+            var dots = document.getElementById("dots" + id);
+            var moreText = document.getElementById("more" + id);
+            var btnText = document.getElementById("myBtn" + id);
+    
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
     <title>History</title>
 </head>
 
@@ -39,55 +55,89 @@
         <h2>De geschiedenis van AI</h2>
         <section>
             <article>
-                <p>De geschiedenis van kunstmatige intelligentie (AI) kent verschillende belangrijke mijlpalen. Deze
-                    mijlpalen vertegenwoordigen significante vooruitgang in AI-onderzoek en -ontwikkeling, die de
-                    koers van het vakgebied en de praktische toepassingen ervan hebben beïnvloed.</p>
+                <p>
+        
+                    De geschiedenis van kunstmatige intelligentie (AI) kent verschillende belangrijke mijlpalen:<br><br>
+        
+                    <b>Dartmouth-conferentie (1956)</b>: Deze conferentie wordt beschouwd als de geboorte van AI,
+                    waarbij toonaangevende onderzoekers bijeenkwamen om de mogelijkheden van het creëren van
+                    intelligente machines te bespreken.
+                    <span id="dots1"></span><span class="more" id="more1"><br><img src="/img/darthmouth.png" alt="Darthmouth Conference Image"></span><br>
+                    <button onclick="myFunction(1)" id="myBtn1">Read more</button>
+                    <br><br>
+        
+                    <b>De Logic Theorist (1956)</b>: Ontwikkeld door Allen Newell, J. C. Shaw en Herbert A. Simon, was
+                    dit programma het eerste dat heuristieken gebruikte om problemen op te lossen en wiskundige
+                    stellingen te bewijzen.
+                    <span id="dots2"></span><span class="more" id="more2"><br><img src="img/logictheorist.png" alt="Logic-Theorist"></span><br>
+                    <button onclick="myFunction(2)" id="myBtn2">Read more</button>
+                    <br><br>
+        
+                    <b>General Problem Solver (GPS) (1957)</b>: De General Problem Solver (GPS) was een computerprogramma ontwikkeld in 1957 door Herbert Simon, J.C. Shaw, en Allen Newell aan de RAND Corporation.
+                    <span id="dots3"></span><span class="more" id="more3"><br>Het doel ervan was om problemen op te lossen door middel van logisch redeneren en probleemoplossend vermogen, in plaats van door specifieke instructies te volgen voor elk individueel probleem.
+                    <br><br>GPS was een van de eerste pogingen om kunstmatige intelligentie te creëren. Het werkte door middel van een zoekalgoritme dat probeerde om vanuit een gegeven beginstaat naar een doelstaat te navigeren door middel van het toepassen van operators. Deze operators waren acties die de staat van het probleem veranderden. Het programma zou de mogelijke acties evalueren, de meest veelbelovende kiezen en deze iteratief toepassen totdat het de doelstaat bereikte.</span><br>
+                    <button onclick="myFunction(3)" id="myBtn3">Read more</button>
+                    <br><br>
+        
+                    <b>De Perceptron (1957)</b>: Gemaakt door Frank Rosenblatt, was de perceptron een van de vroegste
+                    neurale netwerkmodellen, in staat om eenvoudige taken te leren.
+                    <span id="dots4"></span><span class="more" id="more4"><br><img src="img/perceptron.jpg" alt="Perceptron"></span><br>
+                    <button onclick="myFunction(4)" id="myBtn4">Read more</button>
+                    <br><br>
+        
+                    <b>Shakey de Robot (1966)</b>: Ontwikkeld door SRI International, was Shakey een van de eerste
+                    mobiele robots die zijn omgeving kon waarnemen en acties kon ondernemen op basis van die
+                    waarneming.
+                    <span id="dots5"></span><span class="more" id="more5"><br><img src="img/shakey.jpg" alt="Shakey"></span><br>
+                    <button onclick="myFunction(5)" id="myBtn5">Read more</button>
+                    <br><br>
+        
+                    <b>Expertsystemen (1970s-1980s)</b>: Expertsystemen, zoals MYCIN en DENDRAL, werden ontwikkeld om
+                    menselijke expertise op specifieke gebieden, zoals medische diagnose en chemische analyse, na te
+                    bootsen.
+                    <span id="dots6"></span><span class="more" id="more6"><br><br>MYCIN: Een expertsystemenproject van Stanford dat medische diagnostiek automatiseerde, vooral voor bloedinfecties. Het gebruikte kennis van medische experts om diagnoses te stellen op basis van symptomen van patiënten.<br>
+                    <br>DENDRAL: Ontwikkeld aan Stanford, analyseerde chemische data om de structuur van organische verbindingen vast te stellen. Het was een vroege demonstratie van computers die complexe probleemoplossingstaken uitvoerden die normaal menselijke expertise vereisen.</span><br>
+                    <button onclick="myFunction(6)" id="myBtn6">Read more</button>
+                    <br><br>
+        
+                    <b>Backpropagation-algoritme (1986)</b>: Deze doorbraak in neurale netwerktraining, ontwikkeld door
+                    David Rumelhart, Geoffrey Hinton en Ronald Williams, maakte de training van diepe neurale netwerken
+                    mogelijk.
+                    <span id="dots7"></span><span class="more" id="more7"><br><img src="img/backpropagation.jpg" alt="Backpropagation"></span><br>
+                    <button onclick="myFunction(7)" id="myBtn7">Read more</button>
+                    <br><br>
+        
+                    <b>Deep Blue vs. Kasparov (1997)</b>: IBM's Deep Blue versloeg wereldkampioen schaken Garry
+                    Kasparov, waardoor het potentieel van AI in complexe besluitvormingstaken werd aangetoond.
+                    <span id="dots8"></span><span class="more" id="more8"><br><img src="img/deepblue.jpg" alt="Deepblue"></span><br>
+                    <button onclick="myFunction(8)" id="myBtn8">Read more</button>
+                    <br><br>
+        
+                    <b>Watson (2011)</b>: IBM's Watson versloeg menselijke kampioenen op de quizshow Jeopardy!, waarmee
+                    vooruitgang werd geboekt in natuurlijke taalverwerking en kennisrepresentatie.
+                    <span id="dots9"></span><span class="more" id="more9"><br><img src="img/watson.jpg" alt="Watson"></span><br>
+                    <button onclick="myFunction(9)" id="myBtn9">Read more</button>
+                    <br><br>
+        
+                    <b>AlphaGo (2016)</b>: Ontwikkeld door DeepMind, versloeg AlphaGo wereldkampioen Go Lee Sedol,
+                    waarmee de kracht van reinforcement learning en neurale netwerken bij het beheersen van complexe
+                    spellen werd aangetoond.
+                    <span id="dots10"></span><span class="more" id="more10"><br>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/WXuK6gekU1Y" frameborder="0" allowfullscreen></iframe></span><br>
+                    <button onclick="myFunction(10)" id="myBtn10">Read more</button>
+                    <br><br>
+        
+                    <b>AI-model GPT-3 van OpenAI (2020)</b>: Een geavanceerd AI-model gelanceerd in 2020, dat
+                    indrukwekkende prestaties levert in natuurlijke taalverwerking.
+                    <span id="dots11"></span><span class="more" id="more11"><br><img src="img/openai.jpg" alt="OpenAI"></span><br>
+                    <button onclick="myFunction(11)" id="myBtn11">Read more</button>
+                    <br><br>
+        
+                    Deze mijlpalen vertegenwoordigen significante vooruitgang in AI-onderzoek en -ontwikkeling, die de
+                    koers van het vakgebied en de praktische toepassingen ervan hebben beïnvloed.<br><br>
+        
+                </p>
             </article>
-
-            <article>
-                <ol>
-                    <li>
-                        <b>Dartmouth-conferentie (1956)</b>
-                    </li>
-                    <li>
-                        <b>De Logic Theorist (1956)</b>
-                    </li>
-                    <li>
-                        <b>General Problem Solver (GPS) (1957)</b>
-                    </li>
-                    <li>
-                        <b>De Perceptron (1957)</b>
-                    </li>
-                    <li>
-                        <b>Shakey de Robot (1966)</b>
-                    </li>
-                    <li>
-                        <b>Expertsystemen (1970s-1980s)</b>
-                    </li>
-                    <li>
-                        <b>Backpropagation-algoritme (1986)</b>
-                    </li>
-                    <li>
-                        <b>Deep Blue vs. Kasparov (1997)</b>
-                    </li>
-                    <li>
-                        <b>Watson (2011)</b>
-                    </li>
-                    <li>
-                        <b>AlphaGo (2016)</b>
-                    </li>
-                    <li>
-                        <b>AI-model GPT-3 van OpenAI (2020)</b>
-                    </li>
-
-                </ol>
-
-            </article>
-            <article id="uitlegArticle">
-                <p id="uitlegTekst">Klik op een titel voor meer uitleg</p>
-            </article>
-
-
         </section>
     </main>
     <footer>
