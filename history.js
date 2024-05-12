@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 case "AlphaGo (2016)":
                     uitlegArticle.innerHTML = `
                         <p>Ontwikkeld door DeepMind, versloeg AlphaGo wereldkampioen Lee Sedol, waarmee de kracht van reinforcement learning en neurale netwerken bij het beheersen van complexe spellen werd aangetoond.</p>
-                        <img src="img/alphago.jpg" alt="Alphago">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/WXuK6gekU1Y" frameborder="0" allowfullscreen></iframe>
                     `;
                     break;
                 case "AI-model GPT-3 van OpenAI (2020)":
