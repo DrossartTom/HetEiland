@@ -1,3 +1,9 @@
+function isValidEmail(email) {
+    // Reguliere expressie voor het valideren van e-mailadressen
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
 function submitForm() {
     // Verzamel formuliergegevens
     var voornaam = document.getElementById('voornaam').value;
@@ -7,7 +13,7 @@ function submitForm() {
     var cursus = document.getElementById('cursus').value;
     var commentaar = document.getElementById('commentaar').value;
 
-    // Controleer of alle verplichte velden zijn ingevuld
+    // Controleer of alle verplichte velden zijn ingevuld en of het e-mailadres geldig is
     if (voornaam === '' || naam === '' || adres === '' || email === '' || cursus === '') {
         // Toon een melding dat alle verplichte velden moeten worden ingevuld
         var melding = document.getElementById('melding');
@@ -18,6 +24,16 @@ function submitForm() {
             melding.style.display = 'none';
         }, 5000);
         return; // Stop de functie als niet alle velden zijn ingevuld
+    } else if (!isValidEmail(email)) {
+        // Toon een melding dat het e-mailadres ongeldig is
+        var melding = document.getElementById('melding');
+        melding.innerText = 'Ongeldig e-mailadres';
+        melding.style.display = 'block';
+        // Verberg de melding na 5 seconden
+        setTimeout(function () {
+            melding.style.display = 'none';
+        }, 5000);
+        return; // Stop de functie als het e-mailadres ongeldig is
     }
 
     // Maak een object met de verzamelde gegevens
